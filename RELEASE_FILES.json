@@ -1,0 +1,19 @@
+{
+  "status": "Pre-publication draft; intended for private GitHub storage only",
+  "intended_owner": "dollymoulekhi",
+  "intended_repo": "r4284-decipherment",
+  "full_historical_inputs_included": false,
+  "files": {
+    ".gitignore": "a467519e9226a251e7983d8c6bd66b7c925984ffa6d554a7fd8e20c05bf69bee",
+    ".nojekyll": "02d0eb9033672e3541953bc2856d60b7bbb740106b4cc7f7c09fe38e87feec7c",
+    "README.md": "372000a5fc416339ceaadf490ec6c061615340b0bc90d7978e620e1299cb9077",
+    "RIGHTS.md": "aa44ad63f5cdb585e0df417e68376deb9a7f5a0bf15a6fb5d989ce0f6d7a5ffa",
+    "downloads/SHA256SUMS.txt": "add5b93a530b564c3f77c5f737fe0cad08f6be7e3a4e6f8c168506d3e1c2876f",
+    "downloads/r4284-decoder-tools.zip": "4435cbe109d7fc45b214bb5f3cae5d7dfed901ecc5ec88050b6960ce813cb732",
+    "index.html": "0df40a26230dcd59d96588ab2e1fa58addbecf1f60a92112d09411a7bc5c7ea6",
+    "reproduction/README.md": "0154bc06ba45ff10e2d6bb6c5ec49c6801f5642428cd07315116d81917a2c916",
+    "reproduction/decoder.py": "5788b7c9d7a344cfed4dc0ac0de0dc061036a472f14d3696905f60f27a6002e7",
+    "reproduction/test_decoder.py": "966822fc0cef1e49ae6aa293a4d5b9e61ed0bf7ba4b5b65ec04f190ecfcc9dbb",
+    "style.css": "fb338fea82c8402682f390704decc9c52f49d7f7adafbf2a7300da19e7aa7715"
+  }
+}

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A proposed archival alphabet match between DECODE R4284 and R4325. An AI-assisted partial decipherment with unresolved readings and reproducible decoding tools.">
+  <meta name="author" content="Dolly Moulekhi">
+  <title>A candidate key match for R4284 — Dolly Moulekhi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="masthead">
+  <a href="https://github.com/dollymoulekhi">Dolly Moulekhi</a>
+  <span>Historical cryptology · Research notebook</span>
+</header>
+<main id="article">
+  <p class="eyebrow">DECODE R4284 / R4325</p>
+  <h1>A candidate key match for R4284</h1>
+  <p class="subtitle">An AI-assisted partial decipherment of a Swedish–Latin numerical letter.</p>
+  <p class="byline">Prepared 25 October 2026 · By Dolly Moulekhi · Pre-publication draft</p>
+  <aside class="notice" aria-label="Research status">
+    <strong>A proposed reading, not a certified solution.</strong>
+    The alphabet match yields readable passages, but independent transcription,
+    specialist language review, and a complete translation are still pending.
+    This draft has not been peer reviewed. No endorsement by the archive or database is claimed.
+  </aside>
+  <nav aria-label="Article sections">
+    <a href="#finding">Finding</a>
+    <a href="#method">Method</a>
+    <a href="#passages">Passages</a>
+    <a href="#limits">Open questions</a>
+    <a href="#reproduce">Reproduce</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <section id="finding">
+    <p class="eyebrow">01 / The finding</p>
+    <h2>Two records. One promising alphabet.</h2>
+    <p>The numerical letter in <a href="https://de-crypt.org/decrypt-web/RecordsView/4284">DECODE R4284</a>
+      is held at Riksarkivet, Sweden, under <em>Chifferklaver låda II:114</em>.
+      Applying the horizontal alphabet strip on image I25940 in
+      <a href="https://de-crypt.org/decrypt-web/RecordsView/4325">R4325</a>,
+      <em>Chifferklaver låda II:152</em>, produces sequences readable as historical
+      Swedish interspersed with Latin.</p>
+    <p>This is a proposed correspondence between the alphabet in a surviving key
+      compilation and the letter. It does not establish that this exact sheet was
+      used by the writer, or that the compilation's word codes apply to the letter.</p>
+    <div class="finding">
+      <span class="number">729 / 754</span>
+      <p>Numeric occurrences with alphabet assignments in the reviewed transcription.<br>
+        <strong>96.68% coverage. Accuracy is not measured.</strong></p>
+    </div>
+    <p>The remaining numeric occurrences are 23 unmarked groups above 108 and two
+      uncertain readings. The 25 spans already written in clear script are counted
+      separately. A repeated line is retained in the literal edition; excluding it
+      gives 707 assignments out of 732 numeric occurrences.</p>
+    <p>The public R4284 record gives a broad seventeenth-century date range.
+      A narrower 1628/Camerarius association comes from earlier work on a manuscript
+      annotation and needs archival confirmation. R4325 is catalogued from 1640.
+      The alphabet match does not resolve that dating question.</p>
+  </section>
+
+  <section id="method">
+    <p class="eyebrow">02 / How the reading was reached</p>
+    <h2>Apply an archived key; preserve what does not fit.</h2>
+    <p>This investigation builds on <a href="https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html">Daniel
+      Bourdeau's earlier R4284 attempt</a>, including its transcription and notes.
+      That attempt tested Latin-scored homophonic searches and two archival keys,
+      without obtaining a reading. It is not work newly performed or discovered here.</p>
+    <p>Further trials examined other archived alphabets. The promising match is
+      specifically R4325's horizontal strip below its first square grid—not that grid.
+      Its transcription contains 104 distinct assignments in the range 1–108.
+      Four values, 22, 51, 74 and 89, are unassigned. Y and Z share a value set,
+      so the literal output preserves <code>(y/z)</code>.</p>
+    <ol>
+      <li>Keep the earlier transcription and the image-reviewed version separate.</li>
+      <li>Apply the fixed alphabet to each unambiguous numeric token.</li>
+      <li>Preserve clear-script words, uncertain digits and unresolved groups.</li>
+      <li>Explore exact digit partitions separately, without inserting them into the baseline.</li>
+      <li>Record both readable excerpts and unresolved readings.</li>
+    </ol>
+    <p>AI assisted analysis, coding, and drafting. The decoder applies explicit
+      rules; it does not call an AI model to invent or regenerate plaintext.
+      An AI-suggested reading is not independent historical evidence.
+      A complete model-by-model chronology has not yet been reconstructed.</p>
+  </section>
+
+  <section id="passages">
+    <p class="eyebrow">03 / What can be read</p>
+    <h2>Selected passages, without accepting number splits</h2>
+    <p>These excerpts come from literal output. Spaces are editorial, glosses are
+      provisional, and the examples were selected after inspecting the result.
+      Line numbers refer to transcription-file lines, not archival foliation.</p>
+    <article class="excerpt">
+      <p class="label">Line 28 · Latin</p>
+      <p class="reading" lang="la">nobis et patriae securum</p>
+      <p>“Safe for us and the fatherland.”</p>
+      <details><summary>Literal excerpt</summary><code>nobisetpatriaesecurum</code></details>
+    </article>
+    <article class="excerpt">
+      <p class="label">Lines 33–34 · Historical Swedish</p>
+      <p class="reading" lang="sv">beflita eder at det motte skee</p>
+      <p>Approximately, “exert yourself so that it may happen.”</p>
+      <details><summary>Literal excerpt</summary><code>beflitaederatdetmotteskee</code></details>
+    </article>
+    <article class="excerpt">
+      <p class="label">Lines 45–46 · Historical Swedish</p>
+      <p class="reading" lang="sv">arfwingar som för sina wenner och förwanter</p>
+      <p>“Heirs … as for their friends and relatives”; the preceding syntax remains unresolved.</p>
+      <details><summary>Literal excerpt</summary><code>arfwingarsomförsinawennerochförwanter</code></details>
+    </article>
+    <article class="excerpt">
+      <p class="label">Lines 50–51 · Historical Swedish</p>
+      <p class="reading" lang="sv">communicera med eder för denna gången</p>
+      <p>Approximately, “communicate with you on this occasion.”</p>
+      <details><summary>Literal excerpt</summary><code>communiceramedederfördennagången</code></details>
+    </article>
+    <p>These passages make the key correspondence worth investigating. They do not
+      yet establish the letter's author, recipient, political meaning, or complete content.</p>
+  </section>
+
+  <section id="limits">
+    <p class="eyebrow">04 / Where the evidence stops</p>
+    <h2>The unresolved text stays visible.</h2>
+    <p>All 23 unmarked large-group occurrences remain unresolved. Six have exact
+      split hypotheses: 941 → 9,41; 965 → 96,5; 934 → 9,34;
+      336 → 33,6; 649 → 64,9; and 244 → 2,44.
+      For example, splitting 244 would complete <em lang="la">futuris</em>.
+      That linguistic fit is not proof of an internal manuscript boundary.</p>
+    <p>Neither 800 nor 1400 can be fully partitioned into assigned alphabet values.
+      Finding the same numbers in another list does not establish their meanings
+      in this letter. Apparent anomalies such as <code>nonoblkwiscemur</code>
+      and <code>haecsunr</code> are retained, not silently corrected.</p>
+    <h3>What the controls do—and do not—show</h3>
+    <p>The local evidence package runs 1,000 shuffled-key controls and 1,000
+      within-line shuffles. The score is agreement at 115 positions in the
+      four excerpts above. The proposed output agrees at all 115 positions;
+      mean agreement is 4.506 for key shuffles and 13.747 for within-line
+      shuffles. Each family's maximum is 24.</p>
+    <p><strong>The reference strings came from this key's own output.</strong>
+      These comparisons are retrospective sanity checks, not independent
+      language tests or proof of a correct decipherment. Both controls preserve
+      alphabet coverage. The already-inspected continuation is not a held-out test.</p>
+    <h3>Corrections and limits</h3>
+    <p>An earlier “733/754 verified, about 97% complete” claim was withdrawn.
+      Alphabet coverage is not accuracy. Earlier tentative dictionary substitutions
+      were also not established. No complete translation, expert validation,
+      or priority claim is made. Separate letter-cipher material on the images
+      is outside this result.</p>
+  </section>
+
+  <section id="reproduce">
+    <p class="eyebrow">05 / Inspect the computation</p>
+    <h2>A reading should be checkable without an AI model.</h2>
+    <p><a class="button" href="downloads/r4284-decoder-tools.zip" download>Download decoder tools</a></p>
+    <p><strong>This is a code-only download, not the full evidence package.</strong>
+      It contains a standard-library decoder, synthetic tests, and instructions.
+      Supply your own permitted transcription and key JSON to reproduce literal decoding.
+      It does not include the full transcription, key data, or shuffled-control inputs.</p>
+    <pre><code>python -B -m unittest test_decoder.py
+python -B decoder.py --transcription YOUR_TRANSCRIPTION.txt --key YOUR_KEY.json</code></pre>
+    <p>The complete local evidence snapshot contains original/reviewed transcriptions,
+      all literal lines, the key, uncertainty ledger, and control results.
+      Its public download is withheld while reuse permissions for inherited material
+      are checked. That limits independent reproduction from this page alone;
+      it is not presented as a complete public release.</p>
+    <p><a href="reproduction/README.md">Input format and reproduction notes</a> ·
+      <a href="downloads/SHA256SUMS.txt">Download fingerprint</a> ·
+      <a href="RIGHTS.md">Provenance and rights status</a></p>
+    <h3>Useful checks</h3>
+    <p>Corrections should identify the image, line and token, show the proposed
+      alternative, and distinguish visible evidence from linguistic expectation.
+      Systematic failures on image-confirmed readings would weaken the key hypothesis.
+      No review has been commissioned through this page.</p>
+  </section>
+
+  <section id="sources">
+    <p class="eyebrow">06 / Sources and credit</p>
+    <h2>This work starts with preserved sources and earlier research.</h2>
+    <ul class="sources">
+      <li>Riksarkivet, Stockholm. <a href="https://de-crypt.org/decrypt-web/RecordsView/4284">DECODE R4284</a>,
+        <em>Chifferklaver låda II:114</em>; I25750 right and I25751 upper left.</li>
+      <li>Riksarkivet, Stockholm. <a href="https://de-crypt.org/decrypt-web/RecordsView/4325">DECODE R4325</a>,
+        <em>Chifferklaver låda II:152</em>; horizontal strip on I25940.</li>
+      <li>Daniel Bourdeau. <a href="https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html">A Latin cipher
+        letter of 1628 (R4284)</a>. Earlier attempt, transcription and notes.
+        Its published 822-group count differs from our 754-token numerical-letter scope;
+        the upstream counting procedure has not been audited here.</li>
+      <li>Beáta Megyesi, Nils Blomqvist and Eva Pettersson (2019).
+        <a href="https://ep.liu.se/en/conference-article.aspx?Article_No=8&amp;issue=158&amp;series=ecp">The DECODE
+        Database Collection of Historical Ciphers and Keys</a>. HistoCrypt, pp. 69–78.</li>
+      <li>Beáta Megyesi (2020). <a href="https://doi.org/10.3384/ecp2020171014">Transcription of Historical
+        Ciphers and Keys</a>. HistoCrypt, pp. 106–115.</li>
+      <li>Lei Kang and colleagues (2026). <a href="https://hdl.handle.net/10062/122085">Learning to Decipher
+        from Pixels—A Case Study of Copiale</a>. HistoCrypt. Supervised image-to-plaintext
+        evaluation, not the same task as this archival-key comparison.</li>
+      <li>Carter Church (2026). <a href="https://carter.church/writeups/the-letter-to-marmont/">Breaking the
+        Marmont Cipher, 1809</a>. An example of a web write-up with reproducible evidence,
+        not a source of validation for R4284.</li>
+    </ul>
+    <p>Credit to Riksarkivet for the archival holdings and to DECODE/DECRYPT for access
+      and research infrastructure. No scans are redistributed here. These credits
+      do not imply permission, endorsement, or independent verification.</p>
+  </section>
+</main>
+<footer>Local publication draft · No analytics, cookies, external fonts or AI service calls.</footer>
+</body>
+</html>
