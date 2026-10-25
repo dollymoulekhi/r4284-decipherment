@@ -13,6 +13,11 @@ and the horizontal alphabet strip in R4325. It reports a partial reading:
 729/754 numeric occurrences receive alphabet assignments, not verified
 plaintext accuracy. All 23 unmarked large groups remain unresolved.
 
+The reader-facing article links to the original letter image, walks through
+one numbers-to-letters example, and shows selected literal outputs alongside
+editorial readings and provisional English glosses. It does not present a
+complete translation or embed manuscript scans.
+
 Open `index.html` in a browser to read the article. It uses local CSS only;
 there is no analytics, external font, JavaScript or AI service dependency.
 

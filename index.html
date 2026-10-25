@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A proposed archival alphabet match between DECODE R4284 and R4325. An AI-assisted partial decipherment with unresolved readings and reproducible decoding tools.">
+  <meta name="description" content="Reading parts of a Swedish–Latin cipher letter: the original source, a worked decoding example, English glosses, and the limits of a candidate R4284/R4325 key match.">
   <meta name="author" content="Dolly Moulekhi">
-  <title>A candidate key match for R4284 — Dolly Moulekhi</title>
+  <title>Reading a Swedish–Latin cipher letter: R4284 — Dolly Moulekhi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,9 +16,19 @@
 </header>
 <main id="article">
   <p class="eyebrow">DECODE R4284 / R4325</p>
-  <h1>A candidate key match for R4284</h1>
-  <p class="subtitle">An AI-assisted partial decipherment of a Swedish–Latin numerical letter.</p>
+  <h1>Reading a Swedish–Latin cipher letter</h1>
+  <p class="subtitle">An alphabet preserved in another archival record turns parts of R4284’s
+    numbers into words. Here is what the candidate match reveals—and what it does not.</p>
   <p class="byline">25 October 2026 · By Dolly Moulekhi · Preliminary research note</p>
+  <p class="lead">Among the numbers in this historical letter is a phrase that can be read as
+    <em lang="la">nobis et patriae securum</em>: “safe for us and our country.”
+    It emerges when the numbers are replaced with letters using an alphabet strip
+    in a separate key record, R4325. Other passages yield Swedish instructions and
+    references to heirs, friends, and relatives.</p>
+  <p>This is a candidate archival-key match, not a complete translation.
+    The useful result is a set of readable passages within a still-fragmentary letter.
+    The examples below separate what the program produces from the editorial work
+    needed to understand it.</p>
   <aside class="notice" aria-label="Research status">
     <strong>Partial reading · Not independently verified · 96.68% coverage—not accuracy.</strong>
     <p>The candidate alphabet assigns letters to 729 of 754 numeric occurrences.
@@ -31,17 +41,155 @@
       Submission does not imply acceptance, endorsement, or independent verification by Cyphersolver.</p>
   </aside>
   <nav aria-label="Article sections">
-    <a href="#finding">Finding</a>
-    <a href="#method">Method</a>
-    <a href="#passages">Passages</a>
+    <a href="#letter">The original letter</a>
+    <a href="#example">Numbers into words</a>
+    <a href="#passages">Read the results</a>
+    <a href="#meaning">What does it say?</a>
+    <a href="#finding">How much is decoded?</a>
+    <a href="#method">Method and credit</a>
     <a href="#limits">Open questions</a>
     <a href="#reproduce">Reproduce</a>
     <a href="#sources">Sources</a>
   </nav>
 
+  <section id="letter">
+    <p class="eyebrow">Start with the source</p>
+    <h2>The original letter</h2>
+    <p>R4284 is held at Riksarkivet, Sweden, under <em>Chifferklaver låda II:114</em>.
+      Its numerical text mixes cipher groups with Latin words written openly.
+      Those already-readable words are part of the source, not a decoding achievement.</p>
+    <div class="source-panel">
+      <h3>See the manuscript</h3>
+      <p><a class="button" href="https://dbourdeau.github.io/cyphersolver/riksarkivet4284_lead.jpg">View the original letter’s opening image</a></p>
+      <p>This opens the manuscript crop hosted with
+        <a href="https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html#letter">Daniel Bourdeau’s earlier write-up</a>.
+        Image credit: Riksarkivet, Stockholm, via DECODE R4284.
+        It shows the opening lines, not the whole letter.</p>
+      <p><a href="https://de-crypt.org/decrypt-web/RecordsView/4284">Open the DECODE source record</a>.
+        The numerical passage examined here is on I25750, right page, with its
+        continuation on I25751, upper left. Other letter-cipher material on the
+        images is outside this result.</p>
+      <p class="small-note">Why a link rather than an embedded scan? Image reuse terms
+        have not been established for this release. The image stays at its source;
+        this site does not copy or automatically load it.</p>
+    </div>
+    <p>The record dates the material broadly to the seventeenth century. A more specific
+      1628/Camerarius association appears in earlier work on an archival annotation,
+      but the date, writer, and recipient are not established by this decipherment.</p>
+  </section>
+
+  <section id="example">
+    <p class="eyebrow">One worked example</p>
+    <h2>From numbers to “safe for us and our country”</h2>
+    <p>The proposed key is the <strong>horizontal alphabet strip below the first square
+      grid</strong> on I25940 in <a href="https://de-crypt.org/decrypt-web/RecordsView/4325">R4325</a>.
+      It gives several numbers for each letter. For example, 65 gives <em>n</em>,
+      40 gives <em>o</em>, 28 gives <em>b</em>, 2 gives <em>i</em>, and 19 gives <em>s</em>.</p>
+    <ol class="decoding-steps">
+      <li>
+        <h3>The cipher numbers</h3>
+        <p class="small-note">Selected numeric run from transcription line 28, after the already-clear word <em lang="la">quam</em>.</p>
+        <p><code class="cipher-run" data-cipher="65 40 28 2 19 37 18 14 5 72 71 94 5 9 78 57 56 77 71 46 69" data-expected="nobisetpatriaesecurum">65 40 28 2 19 37 18 14 5 72 71 94 5 9 78 57 56 77 71 46 69</code></p>
+      </li>
+      <li>
+        <h3>The program’s literal output</h3>
+        <p><code data-literal="nobisetpatriaesecurum">nobisetpatriaesecurum</code></p>
+        <p class="small-note">The program substitutes letters. It does not supply spaces or translate the phrase.</p>
+      </li>
+      <li>
+        <h3>The editorial reading</h3>
+        <p class="reading" lang="la">nobis et patriae securum</p>
+        <p class="small-note">Spaces are added by a reader; the letters are unchanged.</p>
+      </li>
+      <li>
+        <h3>The provisional English meaning</h3>
+        <p class="translation">“Safe for us and our country.”</p>
+        <p class="small-note">This is a phrase within an incomplete sentence, not a translation of the entire letter.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="passages">
+    <p class="eyebrow">Read the result</p>
+    <h2>What comes out of the cipher?</h2>
+    <p>These are selected short passages, not a continuous letter assembled from disconnected
+      fragments. Each example shows literal output, a reading with editorial spaces, and a
+      provisional English gloss. Line numbers refer to the working transcription file,
+      not archival foliation. No proposed digit splits are used in these examples.</p>
+    <article class="excerpt">
+      <h3>Safety for “us and our country”</h3>
+      <p class="label">Line 28 · Latin</p>
+      <p class="literal"><span>Literal output</span><code data-literal="nobisetpatriaesecurum">nobisetpatriaesecurum</code></p>
+      <p class="reading" lang="la">nobis et patriae securum</p>
+      <p class="translation">“Safe for us and our country.”</p>
+      <p>The words are readable, but this fragment alone does not identify who “us”
+        refers to or what arrangement would provide that safety.</p>
+    </article>
+    <article class="excerpt">
+      <h3>An instruction to the recipient</h3>
+      <p class="label">Lines 33–34 · Historical Swedish</p>
+      <p class="literal"><span>Literal output</span><code data-literal="beflitaederatdetmotteskee">beflitaederatdetmotteskee</code></p>
+      <p class="reading" lang="sv">beflita eder at det motte skee</p>
+      <p class="translation">Approximately, “endeavour to ensure that it happens.”</p>
+      <p>This sounds like an instruction. The phrase by itself does not tell us
+        exactly what the recipient is being asked to achieve.</p>
+    </article>
+    <article class="excerpt">
+      <h3>Ports in the Baltic Sea</h3>
+      <p class="label">Lines 37–38 · Historical Swedish</p>
+      <p class="literal"><span>Literal output</span><code data-literal="såmångahamnarinneiöstersiön">såmångahamnarinneiöstersiön</code></p>
+      <p class="reading" lang="sv">så många hamnar inne i Östersiön</p>
+      <p class="translation">Approximately, “so many ports in the Baltic Sea.”</p>
+      <p>This is a geographic clue, not an identification of a treaty or campaign.
+        The excerpt does not establish who holds the ports. Capitalization of the
+        sea’s name is editorial.</p>
+    </article>
+    <article class="excerpt">
+      <h3>Heirs, friends, and relatives</h3>
+      <p class="label">Lines 45–46 · Historical Swedish</p>
+      <p class="literal"><span>Literal output</span><code data-literal="arfwingarsomförsinawennerochförwanter">arfwingarsomförsinawennerochförwanter</code></p>
+      <p class="reading" lang="sv">arfwingar som för sina wenner och förwanter</p>
+      <p class="translation">“Heirs … as for their friends and relatives.”</p>
+      <p>The preceding syntax is unresolved. We cannot yet say whose heirs these
+        are or what benefit or obligation is being discussed.</p>
+    </article>
+    <article class="excerpt">
+      <h3>A closing communication</h3>
+      <p class="label">Lines 50–51 · Historical Swedish</p>
+      <p class="literal"><span>Literal output</span><code data-literal="communiceramedederfördennagången">communiceramedederfördennagången</code></p>
+      <p class="reading" lang="sv">communicera med eder för denna gången</p>
+      <p class="translation">Approximately, “communicate with you on this occasion.”</p>
+      <p>This phrase occurs in the continuation. Its surrounding wording and the
+        final groups remain uncertain; no signature or sender is recovered here.</p>
+    </article>
+    <aside class="notice">
+      <strong>Why not print a complete English letter?</strong>
+      <p>The mechanical output still contains anomalous words and unread groups.
+        A fluent reconstruction would risk inventing the missing connections.
+        The full inherited transcription and derived line-by-line edition are also
+        withheld from this release while reuse terms are clarified. These excerpts
+        are not a substitute for that full evidence.</p>
+    </aside>
+  </section>
+
+  <section id="meaning">
+    <p class="eyebrow">A cautious interpretation</p>
+    <h2>What does the letter seem to be about?</h2>
+    <p>The readable fragments suggest instructions or negotiations involving Baltic
+      ports, with concern for the safety of “us and our country.” They also mention
+      heirs, friends, and relatives. That makes a diplomatic context plausible.</p>
+    <p><strong>This is a tentative thematic summary, not a recovered historical narrative.</strong>
+      We cannot yet identify the negotiating parties, the proposed settlement,
+      or the role of the relatives. Unread groups may contain precisely the names
+      and terms needed to answer those questions.</p>
+    <p>The result therefore advances the letter from an attempted reading to a
+      testable candidate match with readable excerpts. It does not establish that
+      every mapped letter is correct or that the whole document has been understood.</p>
+  </section>
+
   <section id="finding">
-    <p class="eyebrow">01 / The finding</p>
-    <h2>Two records. One promising alphabet.</h2>
+    <p class="eyebrow">Measure the result</p>
+    <h2>How much has actually been decoded?</h2>
     <p>The numerical letter in <a href="https://de-crypt.org/decrypt-web/RecordsView/4284">DECODE R4284</a>
       is held at Riksarkivet, Sweden, under <em>Chifferklaver låda II:114</em>.
       Applying the horizontal alphabet strip on image I25940 in
@@ -67,7 +215,7 @@
   </section>
 
   <section id="method">
-    <p class="eyebrow">02 / How the reading was reached</p>
+    <p class="eyebrow">Method and credit</p>
     <h2>Apply an archived key; preserve what does not fit.</h2>
     <p>This investigation builds on <a href="https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html">Daniel
       Bourdeau's earlier R4284 attempt</a>, including its transcription and notes.
@@ -91,42 +239,8 @@
       A complete model-by-model chronology has not yet been reconstructed.</p>
   </section>
 
-  <section id="passages">
-    <p class="eyebrow">03 / What can be read</p>
-    <h2>Selected passages, without accepting number splits</h2>
-    <p>These excerpts come from literal output. Spaces are editorial, glosses are
-      provisional, and the examples were selected after inspecting the result.
-      Line numbers refer to transcription-file lines, not archival foliation.</p>
-    <article class="excerpt">
-      <p class="label">Line 28 · Latin</p>
-      <p class="reading" lang="la">nobis et patriae securum</p>
-      <p>“Safe for us and the fatherland.”</p>
-      <details><summary>Literal excerpt</summary><code>nobisetpatriaesecurum</code></details>
-    </article>
-    <article class="excerpt">
-      <p class="label">Lines 33–34 · Historical Swedish</p>
-      <p class="reading" lang="sv">beflita eder at det motte skee</p>
-      <p>Approximately, “exert yourself so that it may happen.”</p>
-      <details><summary>Literal excerpt</summary><code>beflitaederatdetmotteskee</code></details>
-    </article>
-    <article class="excerpt">
-      <p class="label">Lines 45–46 · Historical Swedish</p>
-      <p class="reading" lang="sv">arfwingar som för sina wenner och förwanter</p>
-      <p>“Heirs … as for their friends and relatives”; the preceding syntax remains unresolved.</p>
-      <details><summary>Literal excerpt</summary><code>arfwingarsomförsinawennerochförwanter</code></details>
-    </article>
-    <article class="excerpt">
-      <p class="label">Lines 50–51 · Historical Swedish</p>
-      <p class="reading" lang="sv">communicera med eder för denna gången</p>
-      <p>Approximately, “communicate with you on this occasion.”</p>
-      <details><summary>Literal excerpt</summary><code>communiceramedederfördennagången</code></details>
-    </article>
-    <p>These passages make the key correspondence worth investigating. They do not
-      yet establish the letter's author, recipient, political meaning, or complete content.</p>
-  </section>
-
   <section id="limits">
-    <p class="eyebrow">04 / Where the evidence stops</p>
+    <p class="eyebrow">Where the evidence stops</p>
     <h2>The unresolved text stays visible.</h2>
     <p>All 23 unmarked large-group occurrences remain unresolved. Six have exact
       split hypotheses: 941 → 9,41; 965 → 96,5; 934 → 9,34;
@@ -137,16 +251,19 @@
       Finding the same numbers in another list does not establish their meanings
       in this letter. Apparent anomalies such as <code>nonoblkwiscemur</code>
       and <code>haecsunr</code> are retained, not silently corrected.</p>
-    <h3>What the controls do—and do not—show</h3>
+    <details class="technical">
+    <summary>Technical checks: what the shuffled controls do—and do not—show</summary>
     <p>The local evidence package runs 1,000 shuffled-key controls and 1,000
       within-line shuffles. The score is agreement at 115 positions in the
-      four excerpts above. The proposed output agrees at all 115 positions;
+      four originally tested excerpts (safety, the instruction, heirs, and the closing;
+      not the newly illustrated ports excerpt). The proposed output agrees at all 115 positions;
       mean agreement is 4.506 for key shuffles and 13.747 for within-line
       shuffles. Each family's maximum is 24.</p>
     <p><strong>The reference strings came from this key's own output.</strong>
       These comparisons are retrospective sanity checks, not independent
       language tests or proof of a correct decipherment. Both controls preserve
       alphabet coverage. The already-inspected continuation is not a held-out test.</p>
+    </details>
     <h3>Corrections and limits</h3>
     <p>An earlier “733/754 verified, about 97% complete” claim was withdrawn.
       Alphabet coverage is not accuracy. Earlier tentative dictionary substitutions
@@ -156,7 +273,7 @@
   </section>
 
   <section id="reproduce">
-    <p class="eyebrow">05 / Inspect the computation</p>
+    <p class="eyebrow">Inspect the computation</p>
     <h2>A reading should be checkable without an AI model.</h2>
     <p><a class="button" href="downloads/r4284-decoder-tools.zip" download>Download decoder tools</a></p>
     <p><strong>This is a code-only download, not the full evidence package.</strong>
@@ -181,7 +298,7 @@ python -B decoder.py --transcription YOUR_TRANSCRIPTION.txt --key YOUR_KEY.json<
   </section>
 
   <section id="sources">
-    <p class="eyebrow">06 / Sources and credit</p>
+    <p class="eyebrow">Sources and credit</p>
     <h2>This work starts with preserved sources and earlier research.</h2>
     <ul class="sources">
       <li>Riksarkivet, Stockholm. <a href="https://de-crypt.org/decrypt-web/RecordsView/4284">DECODE R4284</a>,
