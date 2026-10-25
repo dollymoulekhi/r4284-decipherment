@@ -1,6 +1,7 @@
 # Provenance, permissions and release status
 
-Prepared 25 October 2026. This is a local draft, not a published release.
+Prepared 25 October 2026 for a preliminary article and code-only release.
+The full historical evidence package is not included.
 
 ## Original contribution and credit
 
@@ -41,8 +42,8 @@ package. The local full package remains available only within this project.
 
 No blanket license for the site, code, or third-party materials has been
 selected. In particular, no license here grants rights in source scans or
-inherited transcription data. Before a public release, review these terms
-and choose appropriate permissions for the new material separately.
+inherited transcription data. Public availability does not grant a blanket
+reuse license; permissions for the new material remain a separate decision.
 
 No private correspondence, chat history, credentials, personal filesystem
 paths, or office affiliations are intended for distribution.

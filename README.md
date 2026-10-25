@@ -1,8 +1,12 @@
 # R4284: a candidate archival-key match
 
-Pre-publication draft by Dolly Moulekhi, prepared for private GitHub storage.
-Not publicly published or peer reviewed. GitHub Pages must remain disabled
-until a separate public-release decision.
+Preliminary research note by Dolly Moulekhi. Not independently verified or
+peer reviewed.
+
+Read the article: https://dollymoulekhi.github.io/r4284-decipherment/
+
+[Cyphersolver submission — submitted for review](https://github.com/dbourdeau/cyphersolver/issues/98).
+Submission does not imply acceptance or endorsement.
 
 The article proposes a match between the numerical letter in DECODE R4284
 and the horizontal alphabet strip in R4325. It reports a partial reading:
@@ -16,10 +20,8 @@ The `reproduction/` directory and code-only ZIP contain a standalone decoder
 and synthetic tests. Full historical inputs are not included. See
 `reproduction/README.md` and `RIGHTS.md` before using or redistributing anything.
 
-Personal repository destination: `dollymoulekhi/r4284-decipherment`.
-Visibility requirement for this upload: **private**.
+Repository: https://github.com/dollymoulekhi/r4284-decipherment
 
-For eventual GitHub Pages hosting, this directory is the intended repository
-root. Never push the parent research project or the private staging instructions.
-GitHub Pages can serve this static site from the repository's root after
-the correct personal account, release contents and rights status are confirmed.
+This repository contains only the article and code-only tools. GitHub Pages
+serves the static site from the root of `main`. Never push the parent research
+project, full inherited transcriptions, scans, or private staging instructions.

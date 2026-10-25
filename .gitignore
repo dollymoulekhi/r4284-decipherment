@@ -1,3 +1,24 @@
+# Only approved article files and code-only tools may be added normally.
+# Full inherited transcriptions, scans and evidence stay outside this repository
+# until reuse terms are clarified and the release allowlist is reviewed.
+/*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/RIGHTS.md
+!/RELEASE_FILES.json
+!/index.html
+!/style.css
+!/downloads/
+/downloads/*
+!/downloads/SHA256SUMS.txt
+!/downloads/r4284-decoder-tools.zip
+!/reproduction/
+/reproduction/*
+!/reproduction/README.md
+!/reproduction/decoder.py
+!/reproduction/test_decoder.py
+
 __pycache__/
 *.pyc
 .env
