@@ -7,9 +7,16 @@ They do not infer a key or verify a historical decipherment.
 ## Scope of this download
 
 Code and synthetic tests only. Full R4284 transcriptions, R4325 key data,
-line ledger and control inputs are withheld pending a rights check.
+line ledger and control inputs are published separately in the
+[text-only review package](https://gist.github.com/dollymoulekhi/a6eb279347dcbbf9c80aa0b0e23ca676),
+following permission to reproduce the inherited transcription with credit.
 You cannot reproduce the full reported experiment from this download alone.
 Do not treat the synthetic tests as historical evidence.
+
+[Cyphersolver's 26 October review](https://github.com/dbourdeau/cyphersolver/issues/98#issuecomment-6406612222)
+independently checked the alphabet and accepted the match. Its separate statistical
+test was underdetermined, not a pass. Full word separation and translation remain
+unfinished; the review does not certify this code or every input token.
 
 ## Run
 
